@@ -19,7 +19,7 @@ public class CharactersResource {
     private static final String API_PUBLIC_KEY = "bce7b1e856554ab646ff3497dfed63bf";
     private static final String API_PRIVATE_KEY = "2a3fc59492db34bc5f6ce9813da14be6e463924a";
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "http://localhost:3001")
     @RequestMapping(value = "/characters", method = RequestMethod.GET)
     public ResponseEntity<List<Character>> listCharacters() {
         try {
@@ -38,7 +38,7 @@ public class CharactersResource {
         return null;
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "http://localhost:3001")
     @RequestMapping(value = "/characters/{id}", method = RequestMethod.GET)
     public ResponseEntity<List<Comic>> listComics(@PathVariable String id) {
         try {
